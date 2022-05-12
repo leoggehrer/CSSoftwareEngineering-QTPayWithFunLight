@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Payments2Controller.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Controllers\Payments2Controller.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonBase\CommonBase.csproj" />
+    <ProjectReference Include="..\QTPayWithFunLight.Logic\QTPayWithFunLight.Logic.csproj" />
+  </ItemGroup>
+
+</Project>
