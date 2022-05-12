@@ -5,4 +5,4 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Style", "IDE0019:Use pattern matching", Justification = "<Pending>", Scope = "member", Target = "~M:QTPayWithFunLight.WebApi.Controllers.PaymentsController.QueryVolumeAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})~System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.ActionResult{System.Decimal}}")]
+[assembly: SuppressMessage("Style", "IDE0019:Use pattern matching", Justification = "<Pending>", Scope = "member", Target = "~M:QTPayWithFunLight.WebApi.Controllers.PaymentsController.QueryVolumeByAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})~System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.ActionResult{System.Decimal}}")]

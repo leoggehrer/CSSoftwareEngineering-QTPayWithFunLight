@@ -1,5 +1,4 @@
-﻿
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace QTPayWithFunLight.WebApi.Controllers
 {
@@ -17,9 +16,9 @@ namespace QTPayWithFunLight.WebApi.Controllers
         /// <param name="month">The month (optional)</param>
         /// <param name="day">The day (optional)</param>
         /// <returns>The result of the query.</returns>
-        [HttpGet("query", Name = nameof(QueryAsync))]
+        [HttpGet("queryBy", Name = nameof(QueryByAsync))]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<IEnumerable<Models.Payment>>> QueryAsync(
+        public async Task<ActionResult<IEnumerable<Models.Payment>>> QueryByAsync(
             [FromQuery(Name = "cardNumber")] string? creditCardNumber,
             [FromQuery(Name = "year")] int? year,
             [FromQuery(Name = "month")] int? month,
@@ -38,9 +37,9 @@ namespace QTPayWithFunLight.WebApi.Controllers
         /// <param name="month">The month (optional)</param>
         /// <param name="day">The day (optional)</param>
         /// <returns>The volumn</returns>
-        [HttpGet("queryVolume", Name = nameof(QueryVolumeAsync))]
+        [HttpGet("queryVolumeBy", Name = nameof(QueryVolumeByAsync))]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<decimal>> QueryVolumeAsync(
+        public async Task<ActionResult<decimal>> QueryVolumeByAsync(
             [FromQuery(Name = "cardNumber")] string? creditCardNumber,
             [FromQuery(Name = "year")] int? year,
             [FromQuery(Name = "month")] int? month,

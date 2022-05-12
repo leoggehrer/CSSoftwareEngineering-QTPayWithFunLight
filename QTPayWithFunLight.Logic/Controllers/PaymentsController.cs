@@ -16,7 +16,6 @@ namespace QTPayWithFunLight.Logic.Controllers
         {
             if (actionType == ActionType.Insert)
             {
-                entity.Date = DateTime.Now;
                 CheckEntity(entity);
             }
             else if (actionType == ActionType.Update)
@@ -25,7 +24,14 @@ namespace QTPayWithFunLight.Logic.Controllers
             }
             base.ValidateEntity(actionType, entity);
         }
-
+        protected override void BeforeActionExecute(ActionType actionType, Payment entity)
+        {
+            if (actionType == ActionType.Insert)
+            {
+                entity.Date = DateTime.UtcNow;
+            }
+            base.BeforeActionExecute(actionType, entity);
+        }
         protected override async Task BeforeActionExecuteAsync(ActionType actionType, Payment entity)
         {
             if (actionType == GenericController<Payment>.ActionType.Update)

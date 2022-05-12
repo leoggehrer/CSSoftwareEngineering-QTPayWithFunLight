@@ -24,10 +24,17 @@
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Grid.Row="0" Text="{Binding Path=CreditCardNumber}" FontSize="22" Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=DataContext.DataItemWidth}" Margin="5"></TextBlock>
-                <TextBlock Grid.Row="1" Text="{Binding Path=Date}" Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=DataContext.DataItemWidth}" Margin="10 5 5 0"></TextBlock>
-                <StackPanel Grid.Row="2" Orientation="Horizontal" Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=DataContext.DataItemWidth}" Margin="10 0 0 0" >
-                    <TextBlock Text="{Binding Path=Amount}" VerticalAlignment="Center"></TextBlock>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=DataContext.DataItemWidth}">
+                    <Label Content="Card-Number:" FontSize="12" Width="100"></Label>
+                    <TextBlock Text="{Binding Path=CreditCardNumber}" FontSize="12" FontWeight="Bold" Margin="5"></TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Orientation="Horizontal" Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=DataContext.DataItemWidth}">
+                    <Label Content="Date:" Width="100"></Label>
+                    <TextBlock Text="{Binding Path=Date}" Margin="5"></TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=DataContext.DataItemWidth}">
+                    <Label Content="Price:" Width="100"></Label>
+                    <TextBlock Text="{Binding Path=Amount}" Margin="5"></TextBlock>
                     <Label Content="EUR"></Label>
                 </StackPanel>
                 <TextBlock Grid.Row="3" Text="{Binding Path=Note}" Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=DataContext.DataItemWidth}" Margin="10 5 5 0" TextWrapping="Wrap"></TextBlock>
@@ -36,9 +43,9 @@
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="35*"></RowDefinition>
             <RowDefinition Height="25"></RowDefinition>
-            <RowDefinition Height="45*"></RowDefinition>
+            <RowDefinition Height="35*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
