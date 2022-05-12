@@ -17,7 +17,7 @@ namespace QTPayWithFunLight.AspMvc.Controllers
 
         public override async Task<IActionResult> Index()
         {
-            var filter = new Models.FilterModel();
+            var filter = new Models.PaymentsFilter();
             var instanceDataAccess = DataAccess as Logic.Controllers.PaymentsController;
             var accessModels = await instanceDataAccess!.QueryByAsync(filter.CardNumber, filter.Year, filter.Month, filter.Day);
             var volume = await instanceDataAccess!.QueryVolumeByAsync(filter.CardNumber, filter.Year, filter.Month, filter.Day);
@@ -27,7 +27,7 @@ namespace QTPayWithFunLight.AspMvc.Controllers
 
             return View(AfterQuery(accessModels).Select(e => ToViewModel(e, ActionMode.Index)));
         }
-        public virtual async Task<IActionResult> Filter(Models.FilterModel filter)
+        public virtual async Task<IActionResult> Filter(Models.PaymentsFilter filter)
         {
             var instanceDataAccess = DataAccess as Logic.Controllers.PaymentsController;
             var accessModels = await instanceDataAccess!.QueryByAsync(filter.CardNumber, filter.Year, filter.Month, filter.Day);

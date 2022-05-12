@@ -1,6 +1,6 @@
 ﻿namespace QTPayWithFunLight.AspMvc.Models
 {
-    public class FilterModel
+    public class PaymentsFilter
     {
         public bool HasValue => Year.HasValue || Month.HasValue || Day.HasValue || string.IsNullOrEmpty(CardNumber) == false;
 

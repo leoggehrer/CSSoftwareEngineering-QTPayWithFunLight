@@ -125,7 +125,7 @@ Erstellen Sie einen REST-Service Zugriff fuer die Entitaet ***'PayWithFun'*** mi
   - Abfrage eines Payments mit der Id  
   - Erstellen eines Payments (...)  
   - Aenderung eines Payments (...)  
-  - Loeschen eines Payments  
+  - Loeschen eines Payments (mit Rückfrage)  
   
 ##### Zusaetzliche Abfragen von Bezahlungen  
   
@@ -179,11 +179,10 @@ Erstellen Sie fuer die folgenden Entitaeten Ansichten im AspMvc-Projekt:
   
 > Der Kontroller ***PaymentsContoller*** ist bereits erstellt.  
   
-- Projekt   
-  - ListView - Uebersicht der Bezahlungen  
-  - Create - Erstellen einer Bezahlung  
-  - Edit - Bearbeiten einer Betahlung  
-  - Delete - Loeschen einer Bezahlung mit Rueckfrage  
+- ListView - Uebersicht der Bezahlungen  
+- Create - Erstellen einer Bezahlung  
+- Edit - Bearbeiten einer Betahlung  
+- Delete - Loeschen einer Bezahlung mit Rueckfrage  
   
 ### WpfApp-Report  
   

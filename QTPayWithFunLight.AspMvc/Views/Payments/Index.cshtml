@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<QTPayWithFunLight.AspMvc.Models.Payment>
 
 @{
-    var filter = ViewBag.Filter as QTPayWithFunLight.AspMvc.Models.FilterModel ?? new QTPayWithFunLight.AspMvc.Models.FilterModel();
+    var filter = ViewBag.Filter as QTPayWithFunLight.AspMvc.Models.PaymentsFilter ?? new QTPayWithFunLight.AspMvc.Models.PaymentsFilter();
 
     ViewData["Title"] = "Index";
     
@@ -13,7 +13,7 @@
     <a asp-action="Create">Create New</a>
 </p>
 
-<p class="">
+<p class="row">
   <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
     @filter.ToString()
   </button>
