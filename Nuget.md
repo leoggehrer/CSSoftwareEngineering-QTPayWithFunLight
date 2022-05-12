@@ -15,7 +15,7 @@ Die Einstellung **Package Sources** gibt an, von welchem Server die Nuget-Packag
 ein  
 * Bestaetigen Sie den Eintrag mit dem Button 'Update'  
   
-![Screenshot](Screenshot.png)  
+![Screenshot](nugetscreenshot.png)  
   
 * Aktivieren Sie die Auswahl (CheckBox) `NexusRepo`  
 * Deaktivieren Sie alle anderen `Package sources`  

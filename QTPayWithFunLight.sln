@@ -2,28 +2,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{C93AF2DF-758E-4055-A940-49B67ADD4971}") = "QTPayWithFunLight.Logic", "QTPayWithFunLight.Logic\QTPayWithFunLight.Logic.csproj", "{4BA6D589-2D38-4527-BD59-B827DAB0D5F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QTPayWithFunLight.Logic", "QTPayWithFunLight.Logic\QTPayWithFunLight.Logic.csproj", "{4BA6D589-2D38-4527-BD59-B827DAB0D5F4}"
 EndProject
-Project("{B1BD6F27-4077-41EB-A562-2BC4F7CAE2BD}") = "QTPayWithFunLight.ConApp", "QTPayWithFunLight.ConApp\QTPayWithFunLight.ConApp.csproj", "{BA9F6754-9315-4674-AB53-34CB4BB5F30B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QTPayWithFunLight.ConApp", "QTPayWithFunLight.ConApp\QTPayWithFunLight.ConApp.csproj", "{BA9F6754-9315-4674-AB53-34CB4BB5F30B}"
 EndProject
-Project("{CF5073CA-A1F0-4CA5-8886-CBCB8EF6A2CA}") = "QTPayWithFunLight.WebApi", "QTPayWithFunLight.WebApi\QTPayWithFunLight.WebApi.csproj", "{A75A5F5C-82CC-447B-A96D-242738B70C55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QTPayWithFunLight.WebApi", "QTPayWithFunLight.WebApi\QTPayWithFunLight.WebApi.csproj", "{A75A5F5C-82CC-447B-A96D-242738B70C55}"
 EndProject
-Project("{838D96DF-AB3E-49F9-8B56-27C4E2054863}") = "CommonBase", "CommonBase\CommonBase.csproj", "{5D5C4E63-A490-4AD3-8B36-7CF49A5F5937}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonBase", "CommonBase\CommonBase.csproj", "{5D5C4E63-A490-4AD3-8B36-7CF49A5F5937}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}")="SolutionItems","SolutionItems","{7D1E32D0-6289-41AB-B44D-31F87C0C21A2}"
-	ProjectSection(SolutionItems)=preProject
-		AspMvcDataFlow.md=AspMvcDataFlow.md
-		MultiTierArchitecture.md=MultiTierArchitecture.md
-		Nuget.md=Nuget.md
-		ReadMe.md=ReadMe.md
-		screenshot.png=screenshot.png
-		WebApiDataFlow.md=WebApiDataFlow.md
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{7D1E32D0-6289-41AB-B44D-31F87C0C21A2}"
+	ProjectSection(SolutionItems) = preProject
+		AspMvcDataFlow.md = AspMvcDataFlow.md
+		MultiTierArchitecture.md = MultiTierArchitecture.md
+		Nuget.md = Nuget.md
+		ReadMe.md = ReadMe.md
+		nugetscreenshot.png = nugetscreenshot.png
+		WebApiDataFlow.md = WebApiDataFlow.md
+		wpfmainwindow.png = wpfmainwindow.png
+	EndProjectSection
 EndProject
-Project("{9424E1AE-DFF8-4323-8031-811547B28DAF}") = "QTPayWithFunLight.WpfApp", "QTPayWithFunLight.WpfApp\QTPayWithFunLight.WpfApp.csproj", "{11E41372-993D-48EA-85EB-290BD727A3E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QTPayWithFunLight.WpfApp", "QTPayWithFunLight.WpfApp\QTPayWithFunLight.WpfApp.csproj", "{11E41372-993D-48EA-85EB-290BD727A3E6}"
 EndProject
-Project("{C9B5CE5D-4BC9-4382-9C68-E6DF9E656A1F}") = "QTPayWithFunLight.AspMvc", "QTPayWithFunLight.AspMvc\QTPayWithFunLight.AspMvc.csproj", "{F32EA400-BBCC-4F3C-8A2B-882A20C9C1E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QTPayWithFunLight.AspMvc", "QTPayWithFunLight.AspMvc\QTPayWithFunLight.AspMvc.csproj", "{F32EA400-BBCC-4F3C-8A2B-882A20C9C1E8}"
 EndProject
-Project("{3663E8FE-BD1E-4B0E-BF33-A0EAA11975BF}") = "QTPayWithFunLight.Logic.UnitTest", "QTPayWithFunLight.Logic.UnitTest\QTPayWithFunLight.Logic.UnitTest.csproj", "{DA2BE746-8EFA-48EB-BE54-F27E3ED868C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QTPayWithFunLight.Logic.UnitTest", "QTPayWithFunLight.Logic.UnitTest\QTPayWithFunLight.Logic.UnitTest.csproj", "{DA2BE746-8EFA-48EB-BE54-F27E3ED868C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

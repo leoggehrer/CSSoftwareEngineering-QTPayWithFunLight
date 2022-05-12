@@ -125,7 +125,7 @@ Erstellen Sie einen REST-Service Zugriff fuer die Entitaet ***'PayWithFun'*** mi
   - Abfrage eines Payments mit der Id  
   - Erstellen eines Payments (...)  
   - Aenderung eines Payments (...)  
-  - Loeschen eines Payments (mit Rückfrage)  
+  - Loeschen eines Payments (mit Rueckfrage)  
   
 ##### Zusaetzliche Abfragen von Bezahlungen  
   
@@ -188,7 +188,7 @@ Erstellen Sie fuer die folgenden Entitaeten Ansichten im AspMvc-Projekt:
   
 Erstellen Sie fuer die Auswertung der Umsaetze eine Wpf-Anwendung mit folgendem Layout:  
   
-![Umsatzuebersicht](wpfappscreen.png)  
+![Umsatzuebersicht](wpfmainwindow.png)  
   
 Die Aktualisierung der Umsaetze erfolgt unmittelbar nach einer Aenderung der Filterkriterien:  
   
