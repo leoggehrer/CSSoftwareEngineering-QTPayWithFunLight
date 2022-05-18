@@ -59,9 +59,8 @@ namespace QTPayWithFunLight.Logic.DataContext
             GetDbSet(ref result, ref handled);
             if (handled == false || result == null)
             {
-                result = Set<E>();
             }
-            return result;
+            return result ?? Set<E>();
         }
         partial void GetDbSet<E>(ref DbSet<E>? dbSet, ref bool handled) where E : Entities.IdentityEntity;
     }

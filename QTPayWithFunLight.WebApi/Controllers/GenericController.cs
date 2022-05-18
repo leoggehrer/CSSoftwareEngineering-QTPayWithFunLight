@@ -12,17 +12,35 @@ namespace QTPayWithFunLight.WebApi.Controllers
     /// <typeparam name="TOutModel">The type of output model</typeparam>
     [ApiController]
     [Route("api/[controller]")]
-    public abstract partial class GenericController<TAccessModel, TEditModel, TOutModel> : ControllerBase, IDisposable
+    public abstract partial class GenericController<TAccessModel, TEditModel, TOutModel> : ApiControllerBase, IDisposable
         where TAccessModel : class, Logic.IIdentifyable, new()
         where TEditModel : class, new()
         where TOutModel : class, new()
     {
-        private bool disposedValue;
+        private bool disposedValue = false;
+#if ACCOUNT_ON
+        private bool initSessionToken = false;
+#endif
+        private Logic.IDataAccess<TAccessModel>? _dataAccess;
 
         /// <summary>
         /// This property controls access to the logic operations.
         /// </summary>
-        protected Logic.IDataAccess<TAccessModel> DataAccess { get; init; }
+        protected Logic.IDataAccess<TAccessModel> DataAccess
+        {
+            get
+            {
+#if ACCOUNT_ON
+                if (initSessionToken == false)
+                {
+                    initSessionToken = true;
+                    _dataAccess!.SessionToken = GetSessionToken();
+                }
+#endif
+                return _dataAccess!;
+            }
+            init => _dataAccess = value;
+        }
 
         internal GenericController(Logic.IDataAccess<TAccessModel> dataAccess)
         {
@@ -168,7 +186,8 @@ namespace QTPayWithFunLight.WebApi.Controllers
                 if (disposing)
                 {
                     // TODO: dispose managed state (managed objects)
-                    DataAccess.Dispose();
+                    _dataAccess?.Dispose();
+                    _dataAccess = null;
                 }
 
                 // TODO: free unmanaged resources (unmanaged objects) and override finalizer
